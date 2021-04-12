@@ -12,7 +12,7 @@ data4 = ""
 sql=""
 
 # 메인 코드
-conn = pymysql.connect(host='127.0.0.1', user='root', password='root', db='TEST', charset='utf8')
+conn = pymysql.connect(host='127.0.0.1', user='root', password='root', db='TEST_DB', charset='utf8')
 cur = conn.cursor()
 
 sql = "SELECT * FROM USER" # sql변수에 SQL문 입력
