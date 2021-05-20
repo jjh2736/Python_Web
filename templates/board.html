@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>게시판</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-sakura.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.3.js"></script>
+    <script src="js/jquery-sakura.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class="cover"></div>
+    <div class="wrap">
+        <div class="header">
+            <div class="header_wrap">
+                <div class="header_bottom">
+                    <div class="header_bottom_in">
+                        <ul class="gnb">
+                            <li>
+                                <a href="javascript:;">text1</a>
+                                <ul class="depth2">
+                                    <li><a href="javascript:;">text1-1</a></li>
+                                    <li><a href="javascript:;">text1-2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">text2</a>
+                                <ul class="depth2">
+                                    <li><a href="javascript:;">text2-1</a></li>
+                                    <li><a href="javascript:;">text2-2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">text3</a>
+                                <ul class="depth2">
+                                    <li><a href="javascript:;">text3-1</a></li>
+                                    <li><a href="javascript:;">text3-2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">text4</a>
+                                <ul class="depth2">
+                                    <li><a href="javascript:;">text4-1</a></li>
+                                    <li><a href="javascript:;">text4-2</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript:;">text5</a>
+                                <ul class="depth2 depth3">
+                                    <li><a href="javascript:;">text5-1</a></li>
+                                    <li><a href="javascript:;">text5-2</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="dep_bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- header종료 -->
+        <div class="container">
+            <div class="main_visual">
+                <div class="log">
+                    <form action="">
+                        <fieldset>
+                            <legend class="blind">로그인</legend>
+                                <div class="form1">
+                                    <label for="id" class="id1">아이디</label>
+                                    <input type="text" name="" placeholder="아이디" required="" maxlength="">
+                                </div>
+                                <div class="form2">
+                                    <label for="pw" class="pw1">비밀번호</label>
+                                    <input type="password" name="" placeholder="비밀번호" required="" maxlength="">
+                                </div>
+                                <input type="submit" value="login" class="log1">
+                        </fieldset>
+                    </form>
+                    <div class="join">
+                        <p class="jo"><a href="javascript:;">회원가입</a></p>
+                    </div>
+                </div>
+                <div class="time">
+                    <div class="clock">
+                        <div class="time_box">
+                            <span class="txt_lg" id="hours"></span>
+                            <span class="mark">:</span>
+                            <span class="txt_lg" id="min"></span>
+                            <span class="mark02">.</span>
+                            <span class="txt_sm" id="sec"></span>
+                        </div>
+                        <div class="date_box">
+                            <span id="year"></span>
+                            <span class="point">.</span>
+                            <span id="month"></span>
+                            <span class="point">.</span>
+                            <span id="date"></span>
+                            <span id="day"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub4_section">
+                <div class="sub4_section_in">
+                    <div class="title">
+                        <h2>게시판</h2>
+                    </div>
+                    <div class="sub4_section1_txt">
+                        <div class="table_wrap">
+                            <table>
+                                <caption>게시판</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>No</th>
+                                        <th>제목</th>
+                                        <th>작성자</th>
+                                        <th>작성일자</th>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td class="notice"><a href="javascript:;">test10</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td class="notice"><a href="javascript:;">test9</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td class="notice"><a href="javascript:;">test8</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td class="notice"><a href="javascript:;">test7</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td class="notice"><a href="javascript:;">test6</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td class="notice"><a href="javascript:;">test5</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td class="notice"><a href="javascript:;">test4</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td class="notice"><a href="javascript:;">test3</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td class="notice"><a href="javascript:;">test2</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td class="notice"><a href="javascript:;">test1</a></td>
+                                        <td>관리자</td>
+                                        <td>2021.00.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="content">
+                            <ul class="number">
+                                <li class="n1"><a href="javascript:;"><<</a></li>
+                                <li class="n2"><a href="javascript:;"><</a></li>
+                                <li class="n3"><a href="javascript:;">1</a></li>
+                                <li class="n4"><a href="javascript:;">2</a></li>
+                                <li class="n4"><a href="javascript:;">3</a></li>
+                                <li class="n4"><a href="javascript:;">4</a></li>
+                                <li class="n7"><a href="javascript:;">></a></li>
+                                <li class="n8"><a href="javascript:;">>></a></li>
+                            </ul>
+                        </div>
+                        <div class="table_form">
+                            <div class="table_f_inner">
+                                <form action="">
+                                    <fieldset>
+                                        <legend>조건선택</legend>
+                                        <select name="" id="">
+                                            <option value="">조건선택</option>
+                                            <option value="">제목</option>
+                                            <option value="">내용</option>
+                                            <option value="">제목+내용</option>
+                                        </select>
+                                        <input type="text" placeholder="검색어를 입력해 주세요." class="input1">
+                                        <button type="button" class="button1">검색</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- container종료 -->
+    </div><!-- wrap종료 -->
+    <div class="f_wrap">
+        <div class="footer">
+            <div class="footer_in">
+                <div class="footer_wrap">
+                    <ul>
+                        <li><span>주소</span> : 서울시 00구 00로 000</li>
+                        <li><span>대표자</span> :  홍길동</li>
+                    </ul>  
+                    <ul>
+                        <li><span>대표전화</span> : 0000-0000</li>
+                        <li><span>팩스</span> : 0000-0000</li>
+                        <li><span>메일</span> : ABCD@naver.com</li>
+                    </ul>       
+                    <p class="copy">Copyright ⓒ 2021 STUDY All right reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div><!-- f_wrap종료 -->
+</body>
+</html>
