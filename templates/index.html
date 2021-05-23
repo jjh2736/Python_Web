@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-{% include 'header.html' %}
+
+{% include 'header.html' %}  <!--헤더삽입-->
 
 <body>
+<div class="cover"></div>
+
+{% include 'menu.html' %} <!--상단 메인메뉴 삽입-->
+
     <div class="wrap">
         <div class="container">
             <div class="main_visual">
@@ -86,6 +91,8 @@
             </div>
         </div><!-- container종료 -->
     </div><!-- wrap종료 -->
- {% include 'footer.html' %}
+
+ {% include 'footer.html' %} <!--하단 푸터 삽입-->
+
 </body>
 </html>
